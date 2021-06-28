@@ -2,7 +2,6 @@ from node:alpine as build
 
 WORKDIR /app
 
-RUN npm install
 COPY ./package.json /app/package.json
 COPY ./package-lock.json /app/package-lock.json
 
