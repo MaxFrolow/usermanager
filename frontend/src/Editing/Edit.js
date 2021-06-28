@@ -13,8 +13,8 @@ import Col from 'react-bootstrap/Col'
     
     let edditedUser= {
         id: props.dataItem.id,
-        name: props.dataItem.first_name,
-        lastname: props.dataItem.last_name,
+        name: props.dataItem.name,
+        lastname: props.dataItem.lastname,
         age: props.dataItem.age,
         gender: props.dataItem.gender,
     };

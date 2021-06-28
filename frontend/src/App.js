@@ -95,8 +95,8 @@ function App() {
       setUsers(
         users.map(user =>{
           if (user.id === newUser.id){
-            user.first_name = newUser.name
-            user.last_name = newUser.lastname
+            user.first_name = newUser.first_name
+            user.last_name = newUser.last_name
             user.age = newUser.age
             user.gender = newUser.gender
           }
@@ -106,8 +106,8 @@ function App() {
         setAdmins(
           admins.map(admin =>{
             if (admin.id === newUser.id){
-              admin.first_name = newUser.name
-              admin.last_name = newUser.lastname
+              admin.first_name = newUser.first_name
+              admin.last_name = newUser.last_name
               admin.age = newUser.age
               admin.gender = newUser.gender
             }
@@ -117,8 +117,8 @@ function App() {
         setSuperUsers(
           superUsers.map(superUser =>{
             if (superUser.id === newUser.id){
-              superUser.first_name = newUser.name
-              superUser.last_name = newUser.lastname
+              superUser.first_name = newUser.first_name
+              superUser.last_name = newUser.last_name
               superUser.age = newUser.age
               superUser.gender = newUser.gender
             }

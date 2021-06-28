@@ -22,7 +22,7 @@ import Col from 'react-bootstrap/Col'
         function handleShow () {setShow(true)};
         function saveAndClose(type, name, lastname, age, gender){
             console.log("Creating")
-            createUser(type, {"id": "13", "first_name":name, "last_name":lastname, "age": age, "gender": gender})
+            createUser(type, {"id": "13", "name":name, "lastname":lastname, "age": age, "gender": gender})
             console.log("Created")
             handleClose()
         }

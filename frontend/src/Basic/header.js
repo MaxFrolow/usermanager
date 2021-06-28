@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
-import Login from '../Authorization/Login'
 import Create from '../Editing/Create'
 
 
@@ -20,7 +19,10 @@ export default function BaseNav(props){
               <Nav.Link href="#pricing">General Info</Nav.Link>
             </Nav>
             
-            <Login />
+            <Nav>
+              <Nav.Link href="#deets">Log In</Nav.Link>
+            
+            </Nav>
 
           </Navbar.Collapse>
         </Navbar>

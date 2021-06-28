@@ -1,9 +1,15 @@
-FROM node:15.13.0-alpine3.10
+from node:alpine as build
 
-RUN mkdir /opt/frontend
-WORKDIR /opt/frontend/
+WORKDIR /app
 
-CMD npm install --save django-react-csrftoken
 
-EXPOSE 8000
-CMD npm start
+COPY ./package.json /app/package.json
+COPY ./package-lock.json /app/package-lock.json
+
+RUN yarn install
+COPY . .
+RUN yarn build
+
+
+FROM nginx
+COPY --from=build /app/build /usr/share/nginx/html
